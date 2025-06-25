@@ -31,16 +31,16 @@
     "anthropic",
     "claude"
   ],
-  "author": "Your Name <your.email@example.com>",
+  "author": "naoto24kawa",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/open-custom-search-api-mcp-server.git"
+    "url": "https://github.com/naoto24kawa/open-custom-search-api-mcp-server.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/open-custom-search-api-mcp-server/issues"
+    "url": "https://github.com/naoto24kawa/open-custom-search-api-mcp-server/issues"
   },
-  "homepage": "https://github.com/your-username/open-custom-search-api-mcp-server#readme",
+  "homepage": "https://github.com/naoto24kawa/open-custom-search-api-mcp-server#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
     "zod": "^3.23.8"
