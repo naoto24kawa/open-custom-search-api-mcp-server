@@ -2,24 +2,23 @@
   "name": "open-custom-search-api-mcp-server",
   "version": "1.0.0",
   "description": "MCP server for Google Custom Search API",
-  "type": "module",
   "main": "dist/index.js",
+  "type": "module",
   "bin": {
     "open-custom-search-api-mcp-server": "dist/index.js"
   },
   "files": [
-    "dist/**/*",
+    "dist",
     "README.md",
-    "LICENSE",
-    "example.mcp.json"
+    "package.json"
   ],
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "tsc --watch",
+    "dev": "bun run src/index.ts",
+    "clean": "rm -rf dist",
     "test": "bun test",
-    "prepublishOnly": "npm run build",
-    "prepack": "npm run build"
+    "prepublishOnly": "bun run clean && bun run build"
   },
   "keywords": [
     "mcp",
@@ -27,30 +26,29 @@
     "google",
     "custom-search",
     "search-api",
-    "ai",
-    "anthropic",
-    "claude"
+    "ai"
   ],
   "author": "naoto24kawa",
   "license": "MIT",
+  "homepage": "https://github.com/naoto24kawa/open-custom-search-api-mcp-server#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/naoto24kawa/open-custom-search-api-mcp-server.git"
+    "url": "git+https://github.com/naoto24kawa/open-custom-search-api-mcp-server.git"
   },
   "bugs": {
     "url": "https://github.com/naoto24kawa/open-custom-search-api-mcp-server/issues"
   },
-  "homepage": "https://github.com/naoto24kawa/open-custom-search-api-mcp-server#readme",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.4",
+    "@modelcontextprotocol/sdk": "^1.0.0",
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/node": "^22.10.2",
-    "typescript": "^5.7.2",
-    "bun-types": "^1.1.38"
+    "@types/bun": "^1.0.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
   }
 }
