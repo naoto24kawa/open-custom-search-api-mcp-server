@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "git": {
+      "timeout": 60,
+      "command": "/Users/nishikawa/.asdf/shims/uvx",
+      "args": ["mcp-server-git"],
+      "envFile": "${workspaceFolder}/.claude/.env.local.mcp",
+      "transportType": "stdio"
+    },
+    "readme": {
+      "command": "/Users/nishikawa/.asdf/shims/npx",
+      "args": ["npm-package-readme-mcp-server"],
+      "envFile": "${workspaceFolder}/.claude/.env.local.mcp",
+      "transportType": "stdio"
+    }
+  }
+}

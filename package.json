@@ -1,0 +1,56 @@
+{
+  "name": "open-custom-search-api-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Google Custom Search API",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "open-custom-search-api-mcp-server": "dist/index.js"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE",
+    "example.mcp.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "bun test",
+    "prepublishOnly": "npm run build",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "google",
+    "custom-search",
+    "search-api",
+    "ai",
+    "anthropic",
+    "claude"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/open-custom-search-api-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/open-custom-search-api-mcp-server/issues"
+  },
+  "homepage": "https://github.com/your-username/open-custom-search-api-mcp-server#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "bun-types": "^1.1.38"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
